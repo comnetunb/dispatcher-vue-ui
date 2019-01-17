@@ -46,7 +46,7 @@ router.beforeEach(async (to, from, next) => {
 
 var isAuthenticated = () => {
    return axios
-      .get('http://localhost/api/v1/auth/is-authenticated', { withCredentials: true })
+      .get('/api/v1/auth/is-authenticated', { withCredentials: true })
       .then(() => {
          return true;
       })

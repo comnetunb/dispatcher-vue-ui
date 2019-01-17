@@ -22,7 +22,7 @@
       return {
         interval: {},
         apiMode: true,
-        apiUrl: 'http://localhost/api/v1/taskset/running',
+        apiUrl: '/api/v1/taskset/running',
         httpOptions: { withCredentials: true },
         sortFunctions: FieldsDef.sortFunctions,
         onEachSide: 1,

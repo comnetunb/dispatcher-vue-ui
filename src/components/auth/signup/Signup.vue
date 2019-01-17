@@ -59,7 +59,7 @@
     methods: {
       signUp() {
         axios
-          .post('http://localhost/api/v1/auth/signup', this.input)
+          .post('/api/v1/auth/signup', this.input)
           .then((res) => {
             this.$router.push('/admin/dashboard')
           })

@@ -20,7 +20,7 @@
       return {
         interval: {},
         apiMode: true,
-        apiUrl: 'http://localhost/api/v1/taskset/finished',
+        apiUrl: '/api/v1/taskset/finished',
         httpOptions: { withCredentials: true },
         sortFunctions: FieldsDef.sortFunctions,
         onEachSide: 1,

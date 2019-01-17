@@ -30,7 +30,7 @@
           this.$refs.delete.disabled = true
 
           axios
-            .post('http://localhost/api/v1/taskset/delete', { id: data._id }, { withCredentials: true })
+            .post('/api/v1/taskset/delete', { id: data._id }, { withCredentials: true })
             .then(() => {
               this.$refs.delete.disabled = false
               this.$parent.reload()

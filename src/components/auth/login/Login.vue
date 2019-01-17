@@ -41,7 +41,7 @@
     methods: {
       login() {
         axios
-          .post('http://localhost/api/v1/auth/login', this.input, { withCredentials: true }) // TODO
+          .post('/api/v1/auth/login', this.input, { withCredentials: true }) // TODO
           .then((res) => {
             this.$router.push('/admin/dashboard')
           })

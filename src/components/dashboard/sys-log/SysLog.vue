@@ -16,7 +16,7 @@
       return {
         interval: {},
         apiMode: true,
-        apiUrl: 'http://localhost/api/v1/sys-log',
+        apiUrl: '/api/v1/sys-log',
         httpOptions: { withCredentials: true },
         sortFunctions: FieldsDef.sortFunctions,
         onEachSide: 1,

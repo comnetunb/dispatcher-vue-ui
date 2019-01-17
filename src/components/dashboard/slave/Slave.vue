@@ -20,7 +20,7 @@
       return {
         interval: {},
         apiMode: true,
-        apiUrl: 'http://localhost/api/v1/slave',
+        apiUrl: '/api/v1/slave',
         httpOptions: { withCredentials: true },
         sortFunctions: FieldsDef.sortFunctions,
         onEachSide: 1,

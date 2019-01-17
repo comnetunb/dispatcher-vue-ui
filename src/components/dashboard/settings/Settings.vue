@@ -117,7 +117,7 @@
     methods: {
       update(property) {
         axios
-          .post('http://localhost/api/v1/settings/update', property, { withCredentials: true })
+          .post('/api/v1/settings/update', property, { withCredentials: true })
           .then(() => {
             this.modal.message = 'Success';
             this.$refs.modal.open()
@@ -151,7 +151,7 @@
     mounted() {
       this.$nextTick(() => {
         axios
-          .get('http://localhost/api/v1/settings/master', { withCredentials: true })
+          .get('/api/v1/settings/master', { withCredentials: true })
           .then((res) => {
             this.master = res.data
           })
@@ -159,7 +159,7 @@
           })
 
         axios
-          .get('http://localhost/api/v1/settings/slave', { withCredentials: true })
+          .get('/api/v1/settings/slave', { withCredentials: true })
           .then((res) => {
             this.slave = res.data
           })
